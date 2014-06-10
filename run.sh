@@ -8,6 +8,6 @@ if [ ! -n "$NPM_AUTH_TOKEN" ]; then
   exit 1
 fi
 
-echo _auth = $NPM_AUTH_TOKEN > ~/.npmrc_new
-echo email = $NPM_EMAIL >> ~/.npmrc_new
+echo _auth = $NPM_AUTH_TOKEN > ~/.npmrc
+echo email = $NPM_EMAIL >> ~/.npmrc
 npm publish
